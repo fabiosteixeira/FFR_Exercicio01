@@ -1,0 +1,32 @@
+.post {
+    margin: 20px 0 20px 0;
+}
+
+.post__divImage {
+    position: relative;
+    left:0px;
+    float: left;
+    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(228, 228, 228);
+}
+
+.post__divImage__img {
+    width: 120px;
+    height: 120px;
+}
+
+.post__divConteudo {
+    position:relative;
+    float: left;
+    width: 80%;
+    background-color: lightyellow;
+    height: 120px;
+}
+
+.post:after {
+    content: "";
+    display: table;
+    clear: both;
+}
