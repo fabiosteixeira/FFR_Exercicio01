@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./ContainerComponent.css";
-import { PostComponent } from "../PostComponent/PostComponent";
+import { PostComponent } from "../PostComponent";
 
 export class ContainerComponent extends Component {
 
@@ -16,7 +16,7 @@ export class ContainerComponent extends Component {
         return (
             <div className="container">
                 {this.state.posts.map(post => (
-                     PostComponent(post)
+                     <PostComponent {...post}/>
                  ))}
             </div>
         );
